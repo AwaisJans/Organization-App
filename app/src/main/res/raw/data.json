@@ -1,0 +1,237 @@
+{
+    "items": {
+        "Parents": [
+            {
+                "id": 6014605,
+                "title": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                "urlType": "organisation",
+                "expanded": true,
+                "children": [
+                    {
+                        "id": 6012990,
+                        "title": "ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation",
+                        "expanded": true,
+                        "children": [
+                            {
+                                "id": 6014879,
+                                "title": "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                                "urlType": "organisation",
+                                "expanded": false,
+                                "children":[]
+                            },
+                            {
+                                "id": 6014746,
+                                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                                "urlType": "organisation",
+                                "expanded": false,
+                                "children":[]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 6047775,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation",
+                        "expanded": true,
+                        "children": [
+                            {
+                                "id": 6014758,
+                                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                                "urlType": "organisation",
+                                "expanded": true,
+                                "children": [
+                                    {
+                                        "id": 6047655,
+                                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                                        "urlType": "organisation",
+                                        "expanded": false,
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 6002059,
+                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                "urlType": "organisation", "expanded": false,
+                "children": []
+            },
+            {
+                "id": 6009677,
+                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                "urlType": "organisation", "expanded": false,
+                "children": []
+            },
+            {
+                "id": 6001873,
+                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                "urlType": "organisation",
+                "expanded": true,
+                "children": [
+                    {
+                        "id": 6003629,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation","expanded": false,
+                        "children": []
+                    },
+                    {
+                        "id": 6047667,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation","expanded": false,
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": 6015214,
+                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                "urlType": "organisation",
+                "expanded": true,
+                "children": [
+                    {
+                        "id": 6046361,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation","expanded": false,
+                        "children": []
+                    },
+                    {
+                        "id": 6014661,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation","expanded": false,
+                        "children": []
+                    },
+                    {
+                        "id": 6046363,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation","expanded": false,
+                        "children": []
+                    },
+                    {
+                        "id": 6018327,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation","expanded": false,
+                        "children": []
+                    },
+                    {
+                        "id": 6047671,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation","expanded": false,
+                        "children": []
+                    },
+                    {
+                        "id": 6014654,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation","expanded": false,
+                        "children": []
+                    },
+                    {
+                        "id": 6046359,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation","expanded": false,
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": 6047763,
+                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                "urlType": "organisation", "expanded": false,
+                "children": []
+            },
+            {
+                "id": 6047379,
+                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                "urlType": "organisation", "expanded": false,
+                "children": []
+            },
+            {
+                "id": 6014895,
+                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                "urlType": "organisation","expanded": false,
+                "children": []
+            },
+            {
+                "id": 6014900,
+                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                "urlType": "organisation","expanded": false,
+                "children": []
+            },
+            {
+                "id": 6047657,
+                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                "urlType": "organisation","expanded": true,
+                "children": [
+                    {
+                        "id": 6047663,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation",
+                        "expanded": false,
+                        "children":[]
+                    },
+                    {
+                        "id": 6004594,
+                        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                        "urlType": "organisation",
+                        "expanded": true,
+                        "children": [
+                            {
+                                "id": 6047659,
+                                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                                "urlType": "organisation",
+                                "expanded": false,
+                                "children":[]
+                            },
+                            {
+                                "id": 6047661,
+                                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                                "urlType": "organisation",
+                                "expanded": false,
+                                "children":[]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 6047662,
+                "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003452",
+                "urlType": "organisation","expanded": false,
+                "children": []
+            }
+        ]
+    }
+}

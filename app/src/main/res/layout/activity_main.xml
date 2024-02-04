@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#D1D1D1"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <View-->
+<!--        android:layout_width="5dp"-->
+<!--        android:id="@+id/view1"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:background="@color/black"/>-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/tb1"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/tb1"
+        tools:listitem="@layout/parent_item"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
