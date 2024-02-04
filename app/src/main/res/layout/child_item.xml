@@ -8,42 +8,29 @@
     android:orientation="vertical">
 
 
-
-<!--    <View-->
-<!--        android:layout_width="20dp"-->
-<!--        android:id="@+id/view1"-->
-<!--        android:layout_centerInParent="true"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_height="5dp"-->
-<!--        android:layout_marginTop="20dp"-->
-<!--        android:layout_marginBottom="20dp"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:background="@color/black"/>-->
-
-
-
     <LinearLayout
-        android:layout_width="5dp"
-        android:id="@+id/linChild"
-        android:orientation="vertical"
-        android:layout_below="@id/crdView"
-        android:layout_marginStart="10dp"
+        android:id="@+id/v"
+        android:layout_width="20dp"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="0dp"
         android:background="@color/black"
-        android:layout_height="match_parent"/>
+        android:orientation="vertical"
+        android:visibility="visible" />
 
 
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_margin="7dp"
-        android:id="@+id/crdView"
-        app:cardBackgroundColor="#3a456e"
-        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/v"
+            android:background="@color/colorPrimary"
+            android:id="@+id/relChild"
             android:orientation="vertical">
 
             <ImageView
@@ -69,19 +56,36 @@
                 android:textSize="18sp" />
 
         </RelativeLayout>
-    </androidx.cardview.widget.CardView>
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvChildrenSublist"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_toEndOf="@id/linChild"
-        android:layout_below="@id/crdView"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_height="wrap_content"
-        android:visibility="visible" />
+        android:id="@+id/relChild1"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/relChild"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="5dp"
+            android:id="@+id/lin1"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/black"
+            android:layout_height="match_parent"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChildrenSublist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:listitem="@layout/grand_child_item" />
+
+    </LinearLayout>
 
 
 
