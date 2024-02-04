@@ -21,32 +21,18 @@ class MainActivity : AppCompatActivity() {
 
 
     private lateinit var recyclerView: RecyclerView
-//    private lateinit var view1: View
-
-//    var height = 0;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         recyclerView = findViewById(R.id.my_recycler_view)
-//        view1 = findViewById(R.id.view1)
-
-//        height = recyclerView.layoutParams.height
-//        view1.layoutParams.height = height
-//        Log.d("my123",height.toString())
-
-
         try {
             val jsonString: Item = Gson().fromJson(getResultsFromRawJson(), Item::class.java)
             val items: Items = jsonString.items
             val parents: List<Parent> = items.Parents
-
             recyclerView.layoutManager = LinearLayoutManager(this)
-
             recyclerView.adapter = ParentAdapter(parents)
             recyclerView.hasFixedSize()
-
-
         } catch (e: JsonSyntaxException) {
             e.printStackTrace()
             Log.e("MainActivity", "Error parsing JSON data: ${e.message}")
