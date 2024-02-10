@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#D1D1D1"
+    android:background="#6E6D6D"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".FirstScreenOrganization">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -19,13 +19,12 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/my_recycler_view"
+        android:id="@+id/root_rv_organization"
         android:layout_width="match_parent"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_below="@id/tb1"
-        tools:listitem="@layout/parent_item"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        tools:listitem="@layout/root_item_layout"
         android:layout_height="wrap_content" />
 
 </LinearLayout>

@@ -1,0 +1,796 @@
+{
+  "items": {
+    "root": [
+      {
+        "id": 1001099,
+        "title": "Parent Gemeinde St. Leon-Rot Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat ede pariatur. Excepteur sint occaecat cupidatat non proident,",
+        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=60034252",
+        "urlType": "organisation1",
+        "children": [
+          {
+            "id": 6014605,
+            "title": "Child Bauamt ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat deee pariatur. Excepteur sint",
+            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=60031452",
+            "urlType": "organisation2",
+            "children": [
+              {
+                "id": 6012990,
+                "title": "Grandchild Bauhof sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=1101099",
+                "urlType": "organisation3",
+                "children": [
+                  {
+                    "id": 6232365,
+                    "title": "Great-Grandchild Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=1201099",
+                    "urlType": "organisation4",
+                    "children": [
+                      {
+                        "id": 623165,
+                        "title": "Descendant Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=1301099",
+                        "urlType": "organisation5",
+                        "children": [
+                          {
+                            "id": 62323,
+                            "title": "Ancestor Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=1401099",
+                            "urlType": "organisation5",
+                            "children": [
+                              {
+                                "id": 62329,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=1501099",
+                                "urlType": "organisation5",
+                                "children": [
+                                ]
+                              },
+                              {
+                                "id": 12345,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=1601099",
+                                "urlType": "organisation6",
+                                "children": [
+                                  {
+                                    "id": 62326,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=1701099",
+                                    "urlType": "organisation5",
+                                    "children": [
+                                    ]
+                                  },
+                                  {
+                                    "id": 12346,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=1801099",
+                                    "urlType": "organisation6",
+                                    "children": [
+                                      {
+                                        "id": 623283,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=1901099",
+                                        "urlType": "organisation5",
+                                        "children": [
+                                          {
+                                            "id": 623256,
+                                            "title": "AncestorNine Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=2001099",
+                                            "urlType": "organisation5",
+                                            "children": [
+                                            ]
+                                          },
+                                          {
+                                            "id": 12347,
+                                            "title": "AncestorNine Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=2101099",
+                                            "urlType": "organisation6",
+                                            "children": [
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": 12348,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=2201099",
+                                        "urlType": "organisation6",
+                                        "children": [
+                                          {
+                                            "id": 123440,
+                                            "title": "AncestorNine Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=2301099",
+                                            "urlType": "organisation5",
+                                            "children": [
+                                            ]
+                                          },
+                                          {
+                                            "id": 12349,
+                                            "title": "AncestorNine Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=2401099",
+                                            "urlType": "organisation6",
+                                            "children": [
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": 12340,
+                            "title": "Ancestor Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=2501099",
+                            "urlType": "organisation6",
+                            "children": [
+                              {
+                                "id": 123441,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=2601099",
+                                "urlType": "organisation5",
+                                "children": [
+                                  {
+                                    "id": 123442,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=2701099",
+                                    "urlType": "organisation5",
+                                    "children": [
+                                      {
+                                        "id": 123443,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=2801099",
+                                        "urlType": "organisation5",
+                                        "children": [
+                                          {
+                                            "id": 123444,
+                                            "title": "AncestorNine Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=2901099",
+                                            "urlType": "organisation5",
+                                            "children": [
+                                            ]
+                                          },
+                                          {
+                                            "id": 52736,
+                                            "title": "AncestorNine Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=3001099",
+                                            "urlType": "organisation6",
+                                            "children": [
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": 2453,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=3101099",
+                                        "urlType": "organisation6",
+                                        "children": [
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": 8734,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=3201099",
+                                    "urlType": "organisation6",
+                                    "children": [
+                                      {
+                                        "id": 123445,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=3301099",
+                                        "urlType": "organisation5",
+                                        "children": [
+                                        ]
+                                      },
+                                      {
+                                        "id": 9977,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=3401099",
+                                        "urlType": "organisation6",
+                                        "children": [
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": 9971,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=3501099",
+                                "urlType": "organisation6",
+                                "children": [
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": 9972,
+                        "title": "Descendant Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=3601099",
+                        "urlType": "organisation6",
+                        "children": [
+                          {
+                            "id": 123446,
+                            "title": "Ancestor Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=3701099",
+                            "urlType": "organisation5",
+                            "children": [
+                              {
+                                "id": 123447,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=3801099",
+                                "urlType": "organisation5",
+                                "children": [
+                                  {
+                                    "id": 123448,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=3901099",
+                                    "urlType": "organisation5",
+                                    "children": [
+                                      {
+                                        "id": 123449,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=4001099",
+                                        "urlType": "organisation5",
+                                        "children": [
+                                        ]
+                                      },
+                                      {
+                                        "id": 9912,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=4101099",
+                                        "urlType": "organisation6",
+                                        "children": [
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": 9913,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=4201099",
+                                    "urlType": "organisation6",
+                                    "children": [
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": 9914,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=4301099",
+                                "urlType": "organisation6",
+                                "children": [
+                                  {
+                                    "id": 123450,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=4401099",
+                                    "urlType": "organisation5",
+                                    "children": [
+                                      {
+                                        "id": 123451,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=4501099",
+                                        "urlType": "organisation5",
+                                        "children": [
+                                        ]
+                                      },
+                                      {
+                                        "id": 9915,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=4601099",
+                                        "urlType": "organisation6",
+                                        "children": [
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": 9916,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=4701099",
+                                    "urlType": "organisation6",
+                                    "children": [
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": 9917,
+                            "title": "Ancestor Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=4801099",
+                            "urlType": "organisation6",
+                            "children": [
+                              {
+                                "id": 123452,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=4901099",
+                                "urlType": "organisation5",
+                                "children": [
+                                ]
+                              },
+                              {
+                                "id": 9918,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=5001099",
+                                "urlType": "organisation6",
+                                "children": [
+                                  {
+                                    "id": 123453,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=5101099",
+                                    "urlType": "organisation5",
+                                    "children": [
+                                    ]
+                                  },
+                                  {
+                                    "id": 9919,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=5201099",
+                                    "urlType": "organisation6",
+                                    "children": [
+                                      {
+                                        "id": 123454,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=5301099",
+                                        "urlType": "organisation5",
+                                        "children": [
+                                        ]
+                                      },
+                                      {
+                                        "id": 9910,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=5401099",
+                                        "urlType": "organisation6",
+                                        "children": [
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": 23232323,
+                    "title": "Great-Grandchild Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=5501099",
+                    "urlType": "organisation7",
+                    "children": [
+                      {
+                        "id": 123455,
+                        "title": "Descendant Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=5601099",
+                        "urlType": "organisation8",
+                        "children": [
+                          {
+                            "id": 123456,
+                            "title": "Descendant Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=5701099",
+                            "urlType": "organisation5",
+                            "children": [
+                            ]
+                          },
+                          {
+                            "id": 9920,
+                            "title": "Descendant Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=5801099",
+                            "urlType": "organisation6",
+                            "children": [
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": 9921,
+                        "title": "Descendant Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003451",
+                        "urlType": "organisation9",
+                        "children": [
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 6014879,
+                "title": "Bauordnung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003453",
+                "urlType": "organisation10",
+                "children": [
+                ]
+              },
+              {
+                "id": 6014746,
+                "title": "Hochbau Bauunternehmungen Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003454",
+                "urlType": "organisation11",
+                "children": [
+                ]
+              },
+              {
+                "id": 6047775,
+                "title": "Klimaschutz und Mobilit Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003455",
+                "urlType": "organisation12",
+                "children": [
+                ]
+              },
+              {
+                "id": 6014758,
+                "title": "Tiefbau Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003456",
+                "urlType": "organisation13",
+                "children": [
+                  {
+                    "id": 123457,
+                    "title": "Great-Grandchild Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003457",
+                    "urlType": "organisation14",
+                    "children": [
+                      {
+                        "id": 123458,
+                        "title": "Descendant Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003458",
+                        "urlType": "organisation15",
+                        "children": [
+                          {
+                            "id": 123459,
+                            "title": "Ancestor Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003459",
+                            "urlType": "organisation5",
+                            "children": [
+                            ]
+                          },
+                          {
+                            "id": 9922,
+                            "title": "Ancestor Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003450",
+                            "urlType": "organisation6",
+                            "children": [
+                              {
+                                "id": 123460,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003460",
+                                "urlType": "organisation5",
+                                "children": [
+                                  {
+                                    "id": 123461,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003461",
+                                    "urlType": "organisation5",
+                                    "children": [
+                                    ]
+                                  },
+                                  {
+                                    "id": 9923,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003462",
+                                    "urlType": "organisation6",
+                                    "children": [
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": 9924,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003463",
+                                "urlType": "organisation6",
+                                "children": [
+                                  {
+                                    "id": 123462,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003464",
+                                    "urlType": "organisation5",
+                                    "children": [
+                                      {
+                                        "id": 123463,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003465",
+                                        "urlType": "organisation5",
+                                        "children": [
+                                          {
+                                            "id": 123464,
+                                            "title": "AncestorNine Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003466",
+                                            "urlType": "organisation5",
+                                            "children": [
+                                            ]
+                                          },
+                                          {
+                                            "id": 9925,
+                                            "title": "AncestorNine Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003467",
+                                            "urlType": "organisation6",
+                                            "children": [
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": 9926,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003468",
+                                        "urlType": "organisation6",
+                                        "children": [
+                                          {
+                                            "id": 123465,
+                                            "title": "AncestorNine Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003469",
+                                            "urlType": "organisation5",
+                                            "children": [
+                                            ]
+                                          },
+                                          {
+                                            "id": 9927,
+                                            "title": "AncestorNine Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003470",
+                                            "urlType": "organisation6",
+                                            "children": [
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": 9928,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003471",
+                                    "urlType": "organisation6",
+                                    "children": [
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": 9929,
+                        "title": "Descendant Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003472",
+                        "urlType": "organisation16",
+                        "children": [
+                          {
+                            "id": 123466,
+                            "title": "Ancestor Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003473",
+                            "urlType": "organisation5",
+                            "children": [
+                              {
+                                "id": 123467,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003474",
+                                "urlType": "organisation5",
+                                "children": [
+                                  {
+                                    "id": 123468,
+                                    "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003475",
+                                    "urlType": "organisation5",
+                                    "children": [
+                                      {
+                                        "id": 123469,
+                                        "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003476",
+                                        "urlType": "organisation5",
+                                        "children": [
+                                        ]
+                                      },
+                                      {
+                                        "id": 9930,
+                                        "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003477",
+                                        "urlType": "organisation6",
+                                        "children": [
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": 9931,
+                                    "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003478",
+                                    "urlType": "organisation6",
+                                    "children": [
+                                      {
+                                        "id": 123470,
+                                        "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003479",
+                                        "urlType": "organisation5",
+                                        "children": [
+                                        ]
+                                      },
+                                      {
+                                        "id": 9932,
+                                        "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003480",
+                                        "urlType": "organisation6",
+                                        "children": [
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": 9933,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003481",
+                                "urlType": "organisation6",
+                                "children": [
+                                  {
+                                    "id": 123471,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003482",
+                                    "urlType": "organisation5",
+                                    "children": [
+                                      {
+                                        "id": 123472,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003483",
+                                        "urlType": "organisation5",
+                                        "children": [
+                                        ]
+                                      },
+                                      {
+                                        "id": 9934,
+                                        "title": "AncestorEight Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003484",
+                                        "urlType": "organisation6",
+                                        "children": [
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": 9935,
+                                    "title": "AncestorSeven Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003486",
+                                    "urlType": "organisation6",
+                                    "children": [
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": 9936,
+                            "title": "Ancestor Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003487",
+                            "urlType": "organisation6",
+                            "children": [
+                              {
+                                "id": 123473,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003488",
+                                "urlType": "organisation5",
+                                "children": [
+                                ]
+                              },
+                              {
+                                "id": 9937,
+                                "title": "AncestorSix Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003489",
+                                "urlType": "organisation6",
+                                "children": [
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": 9938,
+                        "title": "Decender Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003490",
+                        "urlType": "organisation6",
+                        "children": [
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 6047655,
+            "title": "Eigenbetriebe, Eigengesellschaften und Zweckverb4nde Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003491",
+            "urlType": "organisation17",
+            "children": [
+              {
+                "id": 123615,
+                "title": "Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003492",
+                "urlType": "organisation18",
+                "children": [
+                ]
+              },
+              {
+                "id": 6323059,
+                "title": "Eigenbetrieb Erholungsanlage St. Leoner See Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003493",
+                "urlType": "organisation19",
+                "children": [
+                  {
+                    "id": 6014249,
+                    "title": "Hallenbad Badespass Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                    "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003494",
+                    "urlType": "organisation20",
+                    "children": [
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 813615,
+                "title": "Eigenbetrieb Abwasserentsorgung Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003495",
+                "urlType": "organisation21",
+                "children": [
+                ]
+              },
+              {
+                "id": 6001873,
+                "title": "Harres Veranstaltungs GmbH Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003496",
+                "urlType": "organisation22",
+                "children": [
+                ]
+              },
+              {
+                "id": 6003629,
+                "title": "Kommunale Wohnungsbau GmbH Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003497",
+                "urlType": "organisation23",
+                "children": [
+                ]
+              },
+              {
+                "id": 6047667,
+                "title": "Wassergewinnungszweckverband Hardtwald Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003498",
+                "urlType": "organisation24",
+                "children": [
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6002059,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=6003499",
+        "urlType": "organisation25",
+        "children": []
+      },
+      {
+        "id": 6009677,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+        "url": "https://test-1.hedwig2-hirsch-woelfl.de/app-connection?action=getSBWOrganisationDetails&baseColor=0000EE&baseFontSize=14&singleItemId=5901099",
+        "urlType": "organisation26",
+        "children": []
+      }
+    ]
+  }
+}
