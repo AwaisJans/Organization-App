@@ -9,11 +9,11 @@ class SharedPreferencesManager private constructor() {
         editor!!.apply()
     }
 
-    fun getString(key: String?, defaultValue: String?): String? {
+    fun getString(key: String, defaultValue: String?): String? {
         return sharedPreferences!!.getString(key, defaultValue)
     }
 
-    fun putBoolean(key: String?, value: Boolean) {
+    fun putBoolean(key: String, value: Boolean) {
         editor!!.putBoolean(key, value)
         editor!!.apply()
     }
