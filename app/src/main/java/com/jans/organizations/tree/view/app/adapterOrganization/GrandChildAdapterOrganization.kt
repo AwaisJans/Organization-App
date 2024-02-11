@@ -93,8 +93,8 @@ class GrandChildAdapterOrganization(private val newItemList: List<OrganizationIt
             expandButton.visibility = View.VISIBLE
 
             parentRV.layoutManager = LinearLayoutManager(context)
-//            val adapter = GrandChildAdapterOrganization(childrenList)
-//            parentRV.adapter = adapter
+            val adapter = GrandChildAdapterOrganization(childrenList)
+            parentRV.adapter = adapter
 
             parentTextViewBox.setOnClickListener {
                 isExpandParent = !isExpandParent

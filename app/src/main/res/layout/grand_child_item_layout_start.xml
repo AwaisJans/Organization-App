@@ -51,7 +51,7 @@
             android:id="@+id/dealProductImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="45dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="8dp"
@@ -120,7 +120,7 @@
                                 android:layout_toEndOf="@id/ivExpandedRoot"
                                 android:text="Items are jdjhs gjkh gasdkhg shdhgh jhgdj hgjhgfdjh gdjfgnvdj vjdhj jhbdjh gjgjgdjgjg djgjdf jdjfgjh gdjfgjg here"
                                 android:textColor="@color/black"
-                                android:textSize="18sp"
+                                android:textSize="15sp"
                                 android:textStyle="bold" />
                         </RelativeLayout>
 
@@ -167,7 +167,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="65dp"/>
+            android:layout_marginStart="32dp"/>
 
 
 
