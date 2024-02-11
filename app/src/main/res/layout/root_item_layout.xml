@@ -50,7 +50,7 @@
                 android:layout_toEndOf="@id/ivExpandedRoot"
                 android:text="Items are jdjhs gjkh gasdkhg shdhgh jhgdj hgjhgfdjh gdjfgnvdj vjdhj jhbdjh gjgjgdjgjg djgjdf jdjfgjh gdjfgjg here"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
         </RelativeLayout>
 

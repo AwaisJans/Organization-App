@@ -15,59 +15,94 @@ import android.widget.TextView
 import androidx.core.content.getSystemService
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.jans.organizations.tree.view.app.InfoScreenOrganization
 import com.jans.organizations.tree.view.app.R
 import com.jans.organizations.tree.view.app.modelOrganization.OrganizationItems
+import java.util.Arrays
 
 
 class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>) :
-    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-
+    RecyclerView.Adapter<ViewHolder>() {
+    companion object {
+        private const val VIEW_TYPE_DEAL_MIDDLE_ITEM = 2
+        private const val VIEW_TYPE_DEAL_LAST_ITEM = 3
+    }
     private val falseList = List(itemCount) { false }
-
-
-    var height = 0
 
     lateinit var context: Context
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.child_item_layout, parent, false)
-        return ParentViewHolder(view)
+
+    override fun getItemViewType(position: Int): Int {
+        return if (position == itemCount - 1) {
+            VIEW_TYPE_DEAL_LAST_ITEM
+        } else {
+            VIEW_TYPE_DEAL_MIDDLE_ITEM
+        }
     }
 
-    class ParentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val titleTextView: TextView = itemView.findViewById(R.id.parentTitleTextView)
-        val parentTextViewBox: RelativeLayout =
-            itemView.findViewById(R.id.parent_title_text_view_box)
-        val itemCardChild: LinearLayout = itemView.findViewById(R.id.itemCardChild)
-        val parentNewScreenButton: LinearLayout = itemView.findViewById(R.id.root_new_page_button)
-        val halfLine1: LinearLayout = itemView.findViewById(R.id.halfLine1)
-        val halfLine2: LinearLayout = itemView.findViewById(R.id.halfLine2)
-        val parentRecyclerView: RecyclerView = itemView.findViewById(R.id.rvParent)
-        val expandButton: ImageView = itemView.findViewById(R.id.ivExpandedRoot)
-    }
 
-    private var deviceWidth: Int = 0
-
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val item = newItemList[position]
-
-        context = holder.itemView.context
-        val listHeightMainItemView = ArrayList<Int>()
-        val listHeightRV = ArrayList<Int>()
-        when (holder) {
-            is ParentViewHolder -> {
-                holder.titleTextView.text = item.title
-                val childrenList = item.children!!
-                val parentRV = holder.parentRecyclerView
-                var isExpandParent = falseList[position]
-                val expandButton = holder.expandButton
-                val halfLine1 = holder.halfLine1
-                val halfLine2 = holder.halfLine2
-                val itemCardChild = holder.itemCardChild
+    private fun codeBindViewHolder(position:Int,item: OrganizationItems,type: Int,holder: ViewHolder){
 
 
+
+
+
+        val parentRV:RecyclerView
+        val parentTextViewBox:RelativeLayout
+        val parentNewScreenButton:LinearLayout
+        val expandButton:ImageView
+        val childrenList = item.children!!
+        var isExpandParent = falseList[position]
+        var viewVertical : View
+
+        if(type == VIEW_TYPE_DEAL_MIDDLE_ITEM){
+            holder as MiddleDealHolder
+            holder.titleTextView.text = item.title
+            parentRV = holder.parentRecyclerView
+            expandButton = holder.expandButton
+            parentTextViewBox = holder.parentTextViewBox
+            parentNewScreenButton = holder.parentNewScreenButton
+            viewVertical = holder.viewVertical
+        }
+        else{
+            holder as LastDealHolder
+            parentRV = holder.parentRecyclerView
+            expandButton = holder.expandButton
+            parentTextViewBox = holder.parentTextViewBox
+            parentNewScreenButton = holder.parentNewScreenButton
+            viewVertical = holder.viewVertical
+        }
+
+        if (position == 0){
+            val param = viewVertical.layoutParams as ViewGroup.MarginLayoutParams
+            param.setMargins(12,20,10,0)
+            viewVertical.layoutParams = param
+        }
+
+
+
+
+        if (isExpandParent) {
+            parentRV.visibility = View.GONE
+            expandButton.setImageResource(R.drawable.baseline_add_24)
+        } else {
+            parentRV.visibility = View.VISIBLE
+            expandButton.setImageResource(R.drawable.baseline_remove_24)
+        }
+
+
+        if (childrenList.isEmpty()) {
+            expandButton.visibility = View.GONE
+        } else {
+            expandButton.visibility = View.VISIBLE
+
+            parentRV.layoutManager = LinearLayoutManager(context)
+            val adapter = GrandChildAdapterOrganization(childrenList)
+            parentRV.adapter = adapter
+
+            parentTextViewBox.setOnClickListener {
+                isExpandParent = !isExpandParent
                 if (isExpandParent) {
                     parentRV.visibility = View.GONE
                     expandButton.setImageResource(R.drawable.baseline_add_24)
@@ -77,131 +112,67 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
                 }
 
 
-                if (childrenList.isEmpty()) {
-                    expandButton.visibility = View.GONE
-                } else {
-                    expandButton.visibility = View.VISIBLE
+            }
+        }
 
-                    parentRV.layoutManager = LinearLayoutManager(context)
-//                    val adapter = GrandChildAdapterOrganization(childrenList)
-//                    parentRV.adapter = adapter
+        parentNewScreenButton.setOnClickListener {
+            context.startActivity(Intent(context, InfoScreenOrganization::class.java))
+        }
 
-
-                    holder.parentTextViewBox.setOnClickListener {
-                        isExpandParent = !isExpandParent
-                        if (isExpandParent) {
-                            parentRV.visibility = View.GONE
-                            halfLine1.layoutParams.height = (listHeightMainItemView[position]/2) - listHeightRV[position]
-                            halfLine2.layoutParams.height = (listHeightMainItemView[position]/2) - listHeightRV[position]
-                            expandButton.setImageResource(R.drawable.baseline_add_24)
-                        } else {
-                            parentRV.visibility = View.VISIBLE
-                            expandButton.setImageResource(R.drawable.baseline_remove_24)
-                        }
-
-//                        val list1 = ArrayList<Int>()
-//                        val display = context.getSystemService<DisplayManager>()?.getDisplay(Display.DEFAULT_DISPLAY)
-//                        val deviceWidth = display!!.width
-//                        for (i in 0 until itemCount) {
-//                            itemCardChild.let {
-//                                val widthMeasureSpec = View.MeasureSpec.makeMeasureSpec(deviceWidth, View.MeasureSpec.AT_MOST)
-//                                val heightMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
-//                                it.measure(widthMeasureSpec, heightMeasureSpec)
-//                                list1.add(it.measuredHeight)
-//
-//                            }
-//                            Log.d("tsg123", list1.toString())
-//
-//
-//                            if(position == itemCount - 1){
-//                                halfLine1.layoutParams.height = (list1[i]/2)
-//                                halfLine2.layoutParams.height = 0
-//                            }
-//                            else{
-//                                halfLine1.layoutParams.height = (list1[i]/2)
-//                                halfLine2.layoutParams.height = (list1[i]/2)
-//                            }
-//                        }
+    }
 
 
-                    }
-                }
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val item = newItemList[position]
+        context = holder.itemView.context
+        when (holder.itemViewType) {
+            VIEW_TYPE_DEAL_MIDDLE_ITEM -> {
+                codeBindViewHolder(position,item,VIEW_TYPE_DEAL_MIDDLE_ITEM,holder as MiddleDealHolder)
+            }
 
-
-
-                val display =
-                    context.getSystemService<DisplayManager>()?.getDisplay(Display.DEFAULT_DISPLAY)
-                val deviceWidth = display!!.width // Get the width of the display
-                for (i in 0 until itemCount) {
-                    // Measure the height of the view at the current position
-                    itemCardChild.let {
-                        val widthMeasureSpec =
-                            View.MeasureSpec.makeMeasureSpec(deviceWidth, View.MeasureSpec.AT_MOST)
-                        val heightMeasureSpec =
-                            View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
-                        it.measure(widthMeasureSpec, heightMeasureSpec)
-                        listHeightMainItemView.add(it.measuredHeight)
-
-                    }
-
-
-//                    parentRV.let {
-//                        val widthMeasureSpec =
-//                            View.MeasureSpec.makeMeasureSpec(deviceWidth, View.MeasureSpec.AT_MOST)
-//                        val heightMeasureSpec =
-//                            View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
-//                        it.measure(widthMeasureSpec, heightMeasureSpec)
-//                        listHeightRV.add(it.measuredHeight)
-//
-//                    }
-
-
-                    Log.d("tsg123", listHeightMainItemView.toString())
-
-
-                    if(position == itemCount - 1){
-                        halfLine1.layoutParams.height = (listHeightMainItemView[i]/2)
-//                        halfLine2.layoutParams.height = 0
-                        halfLine2.layoutParams.height = 6.toInt()
-                    }
-                    else{
-                        halfLine1.layoutParams.height = (listHeightMainItemView[i]/2)
-                        halfLine2.layoutParams.height = (listHeightMainItemView[i]/2)
-                    }
-                }
-
-
-
-//                android.os.Handler().postDelayed({
-
-//                val display = context.getSystemService<DisplayManager>()?.getDisplay(Display.DEFAULT_DISPLAY)
-//                deviceWidth = display!!.width
-//                val widthMeasureSpec = View.MeasureSpec.makeMeasureSpec(deviceWidth, View.MeasureSpec.AT_MOST)
-//                val heightMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
-//                itemCardChild.measure(widthMeasureSpec, heightMeasureSpec)
-//
-//                list.add(itemCardChild.measuredHeight)
-
-//                Log.d("tsg123", list.toString())
-
-
-//                    Log.d("myList12",list.size.toString())
-
-//
-//                },2000)
-
-
-                holder.parentNewScreenButton.setOnClickListener {
-                    context.startActivity(Intent(context, InfoScreenOrganization::class.java))
-                }
-
-
+            VIEW_TYPE_DEAL_LAST_ITEM -> {
+                codeBindViewHolder(position,item,VIEW_TYPE_DEAL_LAST_ITEM, holder as LastDealHolder)
             }
         }
     }
-
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view: View
+        return  if (viewType == VIEW_TYPE_DEAL_MIDDLE_ITEM) {
+            view = LayoutInflater.from(parent.context)
+                .inflate(R.layout.child_item_layout_middle, parent, false)
+            MiddleDealHolder(view)
+        } else {
+            view = LayoutInflater.from(parent.context)
+                .inflate(R.layout.child_item_layout_end, parent, false)
+            LastDealHolder(view)
+        }
+    }
     override fun getItemCount(): Int {
         return newItemList.size
     }
+    private class MiddleDealHolder internal constructor(itemView: View) :
+        ViewHolder(itemView) {
 
+        var dealProductImage: LinearLayout = itemView.findViewById(R.id.dealProductImage)
+
+        val titleTextView: TextView = itemView.findViewById(R.id.parentTitleTextView)
+        val parentTextViewBox: RelativeLayout = itemView.findViewById(R.id.parent_title_text_view_box)
+        val parentNewScreenButton: LinearLayout = itemView.findViewById(R.id.root_new_page_button)
+        val parentRecyclerView: RecyclerView = itemView.findViewById(R.id.rvParent)
+        val expandButton: ImageView = itemView.findViewById(R.id.ivExpandedRoot)
+        val viewVertical: View = itemView.findViewById(R.id.viewVertical)
+
+    }
+
+    private class LastDealHolder(itemView: View) :
+        ViewHolder(itemView) {
+        var dealProductImage: LinearLayout = itemView.findViewById(R.id.dealProductImage)
+        val viewVertical: View = itemView.findViewById(R.id.viewVertical)
+
+        val titleTextView: TextView = itemView.findViewById(R.id.parentTitleTextView)
+        val parentTextViewBox: RelativeLayout = itemView.findViewById(R.id.parent_title_text_view_box)
+        val parentNewScreenButton: LinearLayout = itemView.findViewById(R.id.root_new_page_button)
+        val parentRecyclerView: RecyclerView = itemView.findViewById(R.id.rvParent)
+        val expandButton: ImageView = itemView.findViewById(R.id.ivExpandedRoot)
+    }
 }

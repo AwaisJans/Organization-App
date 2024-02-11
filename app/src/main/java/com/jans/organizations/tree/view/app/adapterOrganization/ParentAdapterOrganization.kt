@@ -87,6 +87,14 @@ class ParentAdapterOrganization(private val parentItemList: List<OrganizationIte
                     }
                 }
 
+
+                // code will start from here
+
+
+
+
+
+
                 childRV.layoutManager = LinearLayoutManager(context)
                 childRV.adapter = ChildAdapterOrganization(childList)
 
