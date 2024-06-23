@@ -12,10 +12,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.jans.organizations.tree.view.app.R
-import com.jans.organizations.tree.view.app.InfoScreenOrganization
+import com.jans.organizations.tree.view.app.activities.InfoScreenOrganization
 import com.jans.organizations.tree.view.app.modelOrganization.OrganizationItems
-import com.jans.organizations.tree.view.app.utilOrganization.SharedPreferencesManager
-
 
 class GrandChildAdapterOrganization(private val newItemList: List<OrganizationItems>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -23,7 +21,6 @@ class GrandChildAdapterOrganization(private val newItemList: List<OrganizationIt
         private const val VIEW_TYPE_DEAL_MIDDLE_ITEM = 2
         private const val VIEW_TYPE_DEAL_LAST_ITEM = 3
     }
-    private val falseList = List(itemCount) { false }
 
     lateinit var context: Context
 
@@ -38,17 +35,11 @@ class GrandChildAdapterOrganization(private val newItemList: List<OrganizationIt
 
 
     private fun codeBindViewHolder(position:Int,item: OrganizationItems,type: Int,holder: RecyclerView.ViewHolder){
-
-
-
-
-
         val parentRV:RecyclerView
         val parentTextViewBox:RelativeLayout
         val parentNewScreenButton:LinearLayout
         val expandButton:ImageView
         val childrenList = item.children!!
-        var isExpandParent = falseList[position]
         var viewVertical : View
 
         if(type == VIEW_TYPE_DEAL_MIDDLE_ITEM){
@@ -76,15 +67,18 @@ class GrandChildAdapterOrganization(private val newItemList: List<OrganizationIt
         }
 
 
-
-
-        if (isExpandParent) {
+        // check collapse value from Json
+        var collapse = item.collapse
+        if(!collapse){
             parentRV.visibility = View.GONE
             expandButton.setImageResource(R.drawable.baseline_add_24)
-        } else {
+        }
+        else{
             parentRV.visibility = View.VISIBLE
             expandButton.setImageResource(R.drawable.baseline_remove_24)
         }
+
+
 
 
         if (childrenList.isEmpty()) {
@@ -97,8 +91,8 @@ class GrandChildAdapterOrganization(private val newItemList: List<OrganizationIt
             parentRV.adapter = adapter
 
             parentTextViewBox.setOnClickListener {
-                isExpandParent = !isExpandParent
-                if (isExpandParent) {
+                collapse = !collapse
+                if (!collapse) {
                     parentRV.visibility = View.GONE
                     expandButton.setImageResource(R.drawable.baseline_add_24)
                 } else {

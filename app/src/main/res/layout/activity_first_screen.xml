@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#6F758F"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/tbLyt"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:gravity="center|start"
+            android:minHeight="50dp"
+            android:paddingEnd="40dp"
+            android:text="First Screen"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOrganization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:cornerRadius="7dp"
+        android:elevation="5dp"
+        android:gravity="start|center"
+        android:minHeight="80dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:stateListAnimator="@null"
+        android:text="Organization Screen"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/practiseScreenBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:cornerRadius="7dp"
+        android:elevation="2dp"
+        android:gravity="start|center"
+        android:minHeight="80dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:stateListAnimator="@null"
+        android:text="Practise Screen"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+</LinearLayout>

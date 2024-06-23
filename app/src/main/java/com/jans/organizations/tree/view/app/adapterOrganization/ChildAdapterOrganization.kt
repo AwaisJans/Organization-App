@@ -2,9 +2,6 @@ package com.jans.organizations.tree.view.app.adapterOrganization
 
 import android.content.Context
 import android.content.Intent
-import android.hardware.display.DisplayManager
-import android.util.Log
-import android.view.Display
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,14 +9,13 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.core.content.getSystemService
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.jans.organizations.tree.view.app.InfoScreenOrganization
+import com.jans.organizations.tree.view.app.activities.InfoScreenOrganization
 import com.jans.organizations.tree.view.app.R
 import com.jans.organizations.tree.view.app.modelOrganization.OrganizationItems
-import java.util.Arrays
+import kotlin.math.exp
 
 
 class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>) :
@@ -28,7 +24,6 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
         private const val VIEW_TYPE_DEAL_MIDDLE_ITEM = 2
         private const val VIEW_TYPE_DEAL_LAST_ITEM = 3
     }
-    private val falseList = List(itemCount) { false }
 
     lateinit var context: Context
 
@@ -43,17 +38,11 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
 
 
     private fun codeBindViewHolder(position:Int,item: OrganizationItems,type: Int,holder: ViewHolder){
-
-
-
-
-
         val parentRV:RecyclerView
         val parentTextViewBox:RelativeLayout
         val parentNewScreenButton:LinearLayout
         val expandButton:ImageView
         val childrenList = item.children!!
-        var isExpandParent = falseList[position]
         var viewVertical : View
 
         if(type == VIEW_TYPE_DEAL_MIDDLE_ITEM){
@@ -80,16 +69,17 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
             viewVertical.layoutParams = param
         }
 
-
-
-
-        if (isExpandParent) {
+        // check collapse value from Json
+        var collapse = item.collapse
+        if(!collapse){
             parentRV.visibility = View.GONE
             expandButton.setImageResource(R.drawable.baseline_add_24)
-        } else {
+        }
+        else{
             parentRV.visibility = View.VISIBLE
             expandButton.setImageResource(R.drawable.baseline_remove_24)
         }
+
 
 
         if (childrenList.isEmpty()) {
@@ -102,8 +92,8 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
             parentRV.adapter = adapter
 
             parentTextViewBox.setOnClickListener {
-                isExpandParent = !isExpandParent
-                if (isExpandParent) {
+                collapse = !collapse
+                if (!collapse) {
                     parentRV.visibility = View.GONE
                     expandButton.setImageResource(R.drawable.baseline_add_24)
                 } else {

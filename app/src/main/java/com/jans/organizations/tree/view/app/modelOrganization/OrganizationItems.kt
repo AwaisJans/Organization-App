@@ -5,5 +5,6 @@ data class OrganizationItems(
     val title: String,
     val url: String,
     val urlType: String,
+    val collapse: Boolean,
     val children: List<OrganizationItems>?
 )

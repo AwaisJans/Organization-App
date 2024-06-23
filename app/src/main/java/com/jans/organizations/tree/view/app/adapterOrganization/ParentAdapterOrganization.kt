@@ -2,9 +2,7 @@ package com.jans.organizations.tree.view.app.adapterOrganization
 
 import android.content.Context
 import android.content.Intent
-import android.hardware.display.DisplayManager
 import android.util.Log
-import android.view.Display
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE
@@ -13,21 +11,17 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.core.content.getSystemService
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.jans.organizations.tree.view.app.R
-import com.jans.organizations.tree.view.app.InfoScreenOrganization
+import com.jans.organizations.tree.view.app.activities.InfoScreenOrganization
 import com.jans.organizations.tree.view.app.modelOrganization.OrganizationItems
 
 
 class ParentAdapterOrganization(private val parentItemList: List<OrganizationItems>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-
     lateinit var context: Context
-
-    private val expandedListParent = List(itemCount) { false }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view =
@@ -58,11 +52,9 @@ class ParentAdapterOrganization(private val parentItemList: List<OrganizationIte
                 val childRV = holder.childRecyclerView
                 val parentExpandButton = holder.parentExpandButton
 
-                Log.d("tag123", expandedListParent.toString())
-
-                var isExpandParent = expandedListParent[position]
-
-                if (isExpandParent) {
+                // check collapse value from Json
+                var collapse = parentItem.collapse
+                if (!collapse) {
                     childRV.visibility = GONE
                     parentExpandButton.setImageResource(R.drawable.baseline_add_24)
                 } else {
@@ -75,8 +67,10 @@ class ParentAdapterOrganization(private val parentItemList: List<OrganizationIte
                 } else {
                     parentExpandButton.visibility = View.VISIBLE
                     holder.parentTextViewBox.setOnClickListener {
-                        isExpandParent = !isExpandParent
-                        if (isExpandParent) {
+
+                        collapse = !collapse
+
+                        if (!collapse) {
                             childRV.visibility = GONE
                             parentExpandButton.setImageResource(R.drawable.baseline_add_24)
                         } else {
@@ -89,16 +83,8 @@ class ParentAdapterOrganization(private val parentItemList: List<OrganizationIte
 
 
                 // code will start from here
-
-
-
-
-
-
                 childRV.layoutManager = LinearLayoutManager(context)
                 childRV.adapter = ChildAdapterOrganization(childList)
-
-
                 holder.parentNewScreenButton.setOnClickListener {
                     context.startActivity(Intent(context, InfoScreenOrganization::class.java))
                 }
