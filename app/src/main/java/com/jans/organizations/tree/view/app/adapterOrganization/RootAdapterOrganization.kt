@@ -90,6 +90,7 @@ class RootAdapterOrganization(private val rootItemList: List<OrganizationItems>)
                         // code to collapse or expand item
                         if(collapse){
                             parentRV.visibility = GONE
+                            loader.visibility = GONE
                             expandButtonRoot.setImageResource(R.drawable.baseline_add_24)
                         }
                         else{
