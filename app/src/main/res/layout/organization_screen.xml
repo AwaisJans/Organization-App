@@ -78,7 +78,6 @@
    </LinearLayout>
 
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/root_rv_organization"
         android:layout_width="match_parent"
