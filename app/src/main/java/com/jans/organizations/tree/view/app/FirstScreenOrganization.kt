@@ -13,6 +13,7 @@ import java.io.InputStreamReader
 
 class FirstScreenOrganization : AppCompatActivity() {
 
+    //
 
     private lateinit var rvRootOrganization: RecyclerView
     private lateinit var rootItemListOrganization: List<OrganizationItems>
