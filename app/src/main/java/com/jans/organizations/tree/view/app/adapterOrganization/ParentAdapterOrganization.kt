@@ -54,7 +54,7 @@ class ParentAdapterOrganization(private val parentItemList: List<OrganizationIte
 
                 // check collapse value from Json
                 var collapse = parentItem.collapse
-                if (!collapse) {
+                if (collapse) {
                     childRV.visibility = GONE
                     parentExpandButton.setImageResource(R.drawable.baseline_add_24)
                 } else {
@@ -70,13 +70,12 @@ class ParentAdapterOrganization(private val parentItemList: List<OrganizationIte
 
                         collapse = !collapse
 
-                        if (!collapse) {
+                        if (collapse) {
                             childRV.visibility = GONE
                             parentExpandButton.setImageResource(R.drawable.baseline_add_24)
                         } else {
                             childRV.visibility = View.VISIBLE
                             parentExpandButton.setImageResource(R.drawable.baseline_remove_24)
-
                         }
                     }
                 }

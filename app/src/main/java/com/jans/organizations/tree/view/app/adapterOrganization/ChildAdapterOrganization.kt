@@ -71,7 +71,7 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
 
         // check collapse value from Json
         var collapse = item.collapse
-        if(!collapse){
+        if(collapse){
             parentRV.visibility = View.GONE
             expandButton.setImageResource(R.drawable.baseline_add_24)
         }
@@ -93,7 +93,7 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
 
             parentTextViewBox.setOnClickListener {
                 collapse = !collapse
-                if (!collapse) {
+                if (collapse) {
                     parentRV.visibility = View.GONE
                     expandButton.setImageResource(R.drawable.baseline_add_24)
                 } else {

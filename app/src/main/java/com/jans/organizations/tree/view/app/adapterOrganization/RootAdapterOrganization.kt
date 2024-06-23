@@ -48,17 +48,19 @@ class RootAdapterOrganization(private val rootItemList: List<OrganizationItems>)
                 val parentRV = holder.parentRecyclerView
 
 
+                parentRV.layoutManager = LinearLayoutManager(contextRootAdapter)
+                parentRV.adapter = ParentAdapterOrganization(parentList!!)
+                expandButtonRoot.setImageResource(R.drawable.baseline_remove_24)
+
+
                 // check collapse value from Json
                 var collapse = itemRoot.collapse
-                if(!collapse){
+                if(collapse){
                     parentRV.visibility = GONE
                     expandButtonRoot.setImageResource(R.drawable.baseline_add_24)
                 }
                 else{
                     parentRV.visibility = VISIBLE
-                    parentRV.layoutManager = LinearLayoutManager(contextRootAdapter)
-                    parentRV.adapter = ParentAdapterOrganization(parentList!!)
-                    expandButtonRoot.setImageResource(R.drawable.baseline_remove_24)
                 }
 
                 // check if parent item is empty or not
@@ -71,7 +73,7 @@ class RootAdapterOrganization(private val rootItemList: List<OrganizationItems>)
                     holder.rootTextViewBox.setOnClickListener{
                         collapse = !collapse
                         // code to collapse or expand item
-                        if(!collapse){
+                        if(collapse){
                             parentRV.visibility = GONE
                             expandButtonRoot.setImageResource(R.drawable.baseline_add_24)
                         }
