@@ -15,10 +15,17 @@
         android:theme="@style/Theme.OrganizationsTreeViewApp"
         tools:targetApi="31">
         <activity
-            android:name=".InfoScreenOrganization"
+            android:name=".activities.InfoScreenOrganization"
             android:exported="false" />
+
+
         <activity
-            android:name=".FirstScreenOrganization"
+            android:name=".activities.OrganizationScreen"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".activities.FirstScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

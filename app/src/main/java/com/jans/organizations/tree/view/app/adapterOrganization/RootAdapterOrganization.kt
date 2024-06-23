@@ -11,22 +11,21 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.jans.organizations.tree.view.app.R
-import com.jans.organizations.tree.view.app.InfoScreenOrganization
+import com.jans.organizations.tree.view.app.activities.InfoScreenOrganization
 import com.jans.organizations.tree.view.app.modelOrganization.OrganizationItems
 
-class RootAdapterOrganization(private val rootItemList: List<OrganizationItems>)
-    : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class RootAdapterOrganization(private val rootItemList: List<OrganizationItems>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     lateinit var contextRootAdapter:Context
 
-    private var isExpandRootAdapter = false
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.root_item_layout, parent, false)
-               return RootViewHolder(view)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.root_item_layout, parent, false)
+        return RootViewHolder(view)
     }
     class RootViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val titleTextViewRoot: TextView = itemView.findViewById(R.id.rootTitleTextView)
@@ -48,8 +47,10 @@ class RootAdapterOrganization(private val rootItemList: List<OrganizationItems>)
                 val expandButtonRoot = holder.expandButtonRoot
                 val parentRV = holder.parentRecyclerView
 
-                // Check if Items has which icon
-                if(isExpandRootAdapter){
+
+                // check collapse value from Json
+                var collapse = itemRoot.collapse
+                if(!collapse){
                     parentRV.visibility = GONE
                     expandButtonRoot.setImageResource(R.drawable.baseline_add_24)
                 }
@@ -68,16 +69,15 @@ class RootAdapterOrganization(private val rootItemList: List<OrganizationItems>)
                     // if not empty then make click listener activate
                     expandButtonRoot.visibility = VISIBLE
                     holder.rootTextViewBox.setOnClickListener{
-                        isExpandRootAdapter = !isExpandRootAdapter
+                        collapse = !collapse
                         // code to collapse or expand item
-                        if(isExpandRootAdapter){
+                        if(!collapse){
                             parentRV.visibility = GONE
                             expandButtonRoot.setImageResource(R.drawable.baseline_add_24)
                         }
                         else{
                             parentRV.visibility = VISIBLE
                             expandButtonRoot.setImageResource(R.drawable.baseline_remove_24)
-
                         }
                     }
                 }
