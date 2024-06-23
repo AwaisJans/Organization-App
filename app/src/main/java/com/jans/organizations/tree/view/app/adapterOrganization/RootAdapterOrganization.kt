@@ -1,7 +1,10 @@
 package com.jans.organizations.tree.view.app.adapterOrganization
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE
@@ -48,19 +51,27 @@ class RootAdapterOrganization(private val rootItemList: List<OrganizationItems>)
                 val parentRV = holder.parentRecyclerView
 
 
+                val activity = contextRootAdapter as Activity
+                activity.runOnUiThread {
+                    val layoutManager = LinearLayoutManager(contextRootAdapter)
+                    layoutManager.isAutoMeasureEnabled = true
+                    parentRV.layoutManager = layoutManager
+                    parentRV.adapter = ParentAdapterOrganization(parentList!!)
+                }
+
+
+                expandButtonRoot.setImageResource(R.drawable.baseline_remove_24)
+
+
                 // check collapse value from Json
                 var collapse = itemRoot.collapse
-                if(!collapse){
+                if(collapse){
                     parentRV.visibility = GONE
                     expandButtonRoot.setImageResource(R.drawable.baseline_add_24)
                 }
                 else{
                     parentRV.visibility = VISIBLE
-                    parentRV.layoutManager = LinearLayoutManager(contextRootAdapter)
-                    parentRV.adapter = ParentAdapterOrganization(parentList!!)
-                    expandButtonRoot.setImageResource(R.drawable.baseline_remove_24)
                 }
-
                 // check if parent item is empty or not
                 if(parentList.isEmpty()){
                     expandButtonRoot.visibility = GONE
@@ -69,14 +80,24 @@ class RootAdapterOrganization(private val rootItemList: List<OrganizationItems>)
                     // if not empty then make click listener activate
                     expandButtonRoot.visibility = VISIBLE
                     holder.rootTextViewBox.setOnClickListener{
+
+
+                        val loader = holder.itemView.findViewById<LinearLayout>(R.id.idLoader)
+                        loader.visibility = VISIBLE
+
+
                         collapse = !collapse
                         // code to collapse or expand item
-                        if(!collapse){
+                        if(collapse){
                             parentRV.visibility = GONE
                             expandButtonRoot.setImageResource(R.drawable.baseline_add_24)
                         }
                         else{
-                            parentRV.visibility = VISIBLE
+                            Handler(Looper.getMainLooper()).postDelayed({
+                                parentRV.visibility = VISIBLE
+                                loader.visibility = GONE
+
+                            },1000)
                             expandButtonRoot.setImageResource(R.drawable.baseline_remove_24)
                         }
                     }

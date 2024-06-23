@@ -34,9 +34,13 @@ class OrganizationScreen : AppCompatActivity() {
             b.idLoader.visibility = View.GONE
             b.rootRvOrganization.visibility = View.VISIBLE
 
-            rvRootOrganization.layoutManager = LinearLayoutManager(this)
+
+            val layoutManager = LinearLayoutManager(this)
+            layoutManager.isAutoMeasureEnabled = true
+            rvRootOrganization.layoutManager = layoutManager
             val adapter = RootAdapterOrganization(rootItemListOrganization())
             rvRootOrganization.adapter = adapter
+
         },50)
     }
 

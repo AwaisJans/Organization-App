@@ -1,5 +1,6 @@
 package com.jans.organizations.tree.view.app.adapterOrganization
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.util.Log
@@ -47,14 +48,33 @@ class ParentAdapterOrganization(private val parentItemList: List<OrganizationIte
 
         when (holder) {
             is ParentViewHolder -> {
+
+
+
+
+
                 holder.parentTitleTextView.text = parentItem.title
                 val childList = parentItem.children!!
                 val childRV = holder.childRecyclerView
                 val parentExpandButton = holder.parentExpandButton
 
+
+                val activity = context as Activity
+
+                activity.runOnUiThread {
+                    val layoutManager = LinearLayoutManager(context)
+                    layoutManager.isAutoMeasureEnabled = true
+                    childRV.layoutManager = layoutManager
+                    // code will start from here
+                    childRV.adapter = ChildAdapterOrganization(childList)
+                }
+
+
+
+
                 // check collapse value from Json
                 var collapse = parentItem.collapse
-                if (!collapse) {
+                if (collapse) {
                     childRV.visibility = GONE
                     parentExpandButton.setImageResource(R.drawable.baseline_add_24)
                 } else {
@@ -70,21 +90,18 @@ class ParentAdapterOrganization(private val parentItemList: List<OrganizationIte
 
                         collapse = !collapse
 
-                        if (!collapse) {
+                        if (collapse) {
                             childRV.visibility = GONE
                             parentExpandButton.setImageResource(R.drawable.baseline_add_24)
                         } else {
                             childRV.visibility = View.VISIBLE
                             parentExpandButton.setImageResource(R.drawable.baseline_remove_24)
-
                         }
                     }
                 }
 
 
-                // code will start from here
-                childRV.layoutManager = LinearLayoutManager(context)
-                childRV.adapter = ChildAdapterOrganization(childList)
+
                 holder.parentNewScreenButton.setOnClickListener {
                     context.startActivity(Intent(context, InfoScreenOrganization::class.java))
                 }

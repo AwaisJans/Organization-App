@@ -1,5 +1,6 @@
 package com.jans.organizations.tree.view.app.adapterOrganization
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -39,7 +40,7 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
 
     private fun codeBindViewHolder(position:Int,item: OrganizationItems,type: Int,holder: ViewHolder){
         val parentRV:RecyclerView
-        val parentTextViewBox:RelativeLayout
+        val parentTextViewBox:LinearLayout
         val parentNewScreenButton:LinearLayout
         val expandButton:ImageView
         val childrenList = item.children!!
@@ -63,15 +64,22 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
             viewVertical = holder.viewVertical
         }
 
-        if (position == 0){
-            val param = viewVertical.layoutParams as ViewGroup.MarginLayoutParams
-            param.setMargins(12,20,10,0)
-            viewVertical.layoutParams = param
+        val activity = context as Activity
+        activity.runOnUiThread {
+            val layoutManager = LinearLayoutManager(context)
+            layoutManager.isAutoMeasureEnabled = true
+            parentRV.layoutManager = layoutManager
+            val adapter = GrandChildAdapterOrganization(childrenList)
+            parentRV.adapter = adapter
         }
+
+
+
+
 
         // check collapse value from Json
         var collapse = item.collapse
-        if(!collapse){
+        if(collapse){
             parentRV.visibility = View.GONE
             expandButton.setImageResource(R.drawable.baseline_add_24)
         }
@@ -87,13 +95,11 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
         } else {
             expandButton.visibility = View.VISIBLE
 
-            parentRV.layoutManager = LinearLayoutManager(context)
-            val adapter = GrandChildAdapterOrganization(childrenList)
-            parentRV.adapter = adapter
+
 
             parentTextViewBox.setOnClickListener {
                 collapse = !collapse
-                if (!collapse) {
+                if (collapse) {
                     parentRV.visibility = View.GONE
                     expandButton.setImageResource(R.drawable.baseline_add_24)
                 } else {
@@ -146,7 +152,7 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
         var dealProductImage: LinearLayout = itemView.findViewById(R.id.dealProductImage)
 
         val titleTextView: TextView = itemView.findViewById(R.id.parentTitleTextView)
-        val parentTextViewBox: RelativeLayout = itemView.findViewById(R.id.parent_title_text_view_box)
+        val parentTextViewBox: LinearLayout = itemView.findViewById(R.id.parent_title_text_view_box)
         val parentNewScreenButton: LinearLayout = itemView.findViewById(R.id.root_new_page_button)
         val parentRecyclerView: RecyclerView = itemView.findViewById(R.id.rvParent)
         val expandButton: ImageView = itemView.findViewById(R.id.ivExpandedRoot)
@@ -160,7 +166,7 @@ class ChildAdapterOrganization(private val newItemList: List<OrganizationItems>)
         val viewVertical: View = itemView.findViewById(R.id.viewVertical)
 
         val titleTextView: TextView = itemView.findViewById(R.id.parentTitleTextView)
-        val parentTextViewBox: RelativeLayout = itemView.findViewById(R.id.parent_title_text_view_box)
+        val parentTextViewBox: LinearLayout = itemView.findViewById(R.id.parent_title_text_view_box)
         val parentNewScreenButton: LinearLayout = itemView.findViewById(R.id.root_new_page_button)
         val parentRecyclerView: RecyclerView = itemView.findViewById(R.id.rvParent)
         val expandButton: ImageView = itemView.findViewById(R.id.ivExpandedRoot)
